@@ -14,11 +14,11 @@ on:
   workflow_dispatch:
     inputs:
       fromRevision:
-        description: 'The from revision'
+        description: 'The "from" revision'
         required: true
         default: '${major}.${minor}.${patch}'
       toRevision:
-        description: 'The to revision'
+        description: 'The "to" revision'
         required: true
         default: '${major}.${minor}.${patch}'
 
@@ -95,5 +95,6 @@ jobs:
               print(f"_Release notes generation failed. Raw commits since {prev_tag}:_\n\n```\n{commits}\n```")
           PYEOF
           )
-        
+          
           printf "## v%s\n\n%s\n\n" "$CURRENT_TAG" "$SUMMARY"
+          printf "**Full Changelog**: %s/%s/compare/%s...%s\n" "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$PREV_TAG" "$CURRENT_TAG"
