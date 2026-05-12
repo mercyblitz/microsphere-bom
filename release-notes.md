@@ -101,4 +101,21 @@ No new features, bug fixes, test improvements, or dependency updates in this ver
 
 ---
 
-**Full Changelog**: https://github.com/microsphere-projects/microsphere-bom/compare/0.2.0...0.2.1
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-bom/compare/0.2.0...0.2.1## v0.2.2
+
+# Release Notes - v0.2.2
+
+## Dependency Updates
+- **Log4j 2**: Updated from `2.25.4` to `2.26.0`. ([#9](https://github.com/microsphere-projects/pull/9))
+- **SQLite JDBC**: Updated from `3.53.0.0` to `3.53.1.0`. ([#8](https://github.com/microsphere-projects/pull/8))
+- **Tomcat**: Updated from `11.0.21` to `11.0.22`. ([#7](https://github.com/microsphere-projects/pull/7))
+
+## Build and Workflow Enhancements
+- Updated Maven wrapper to `3.9.15`. ([1586d8e](https://github.com/microsphere-projects/commit/1586d8e))
+- Switched to using the official Maven Central distribution URL for dependencies. ([a779f8d](https://github.com/microsphere-projects/commit/a779f8d))
+
+---
+
+For more details, please refer to the [full changelog](https://github.com/microsphere-projects/compare/0.2.1...0.2.2).
+
+**Full Changelog**: https://github.com/microsphere-projects/microsphere-bom/compare/0.2.1...0.2.2
